@@ -1,7 +1,10 @@
 #Static React (nail-static-react)
 Create static pages and sites using React components with [John Henry's Hammer](https://github.com/johnhenry/john-henrys-hammer)
 
-##Installation
+#Dependencies
+This file use react components as templates. Please install react, or any other dependencies within your project upon which these components depend.
+
+##ManualInstallation
 Most nails can be installed automatically see [John Henry's Hammer](https://github.com/johnhenry/john-henrys-hammer/blob/master/readme.md#usage).
 This nail, however, makes heavy use of babel-register, which is know to fail as a dependency of other modules. As such, please install this manually:
 
