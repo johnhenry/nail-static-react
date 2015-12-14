@@ -2,8 +2,53 @@
 Create static pages and sites using React components with [John Henry's Hammer](https://github.com/johnhenry/john-henrys-hammer)
 
 ##Installation
-See [John Henry's Hammer](https://github.com/johnhenry/john-henrys-hammer/blob/master/readme.md#usage)
+Most nails can be installed automatically see [John Henry's Hammer](https://github.com/johnhenry/john-henrys-hammer/blob/master/readme.md#usage).
+This nail, however, makes heavy use of babel-register, which is know to fail as a dependency of other modules. As such, please install this manually:
 
+###Manual Installation: Clone
+
+From within your project, clone this project using git.
+
+```bash
+git clone git@github.com:johnhenry/nail-static-react.git
+```
+
+OR
+
+```bash
+git clone https://github.com/johnhenry/nail-static-react.git
+```
+
+###Manual Installation: Navigate to the folder and install npm dependencies
+
+```bash
+cd nail-static-react
+npm install
+```
+
+###Manual Installation: Nailfile
+
+In your nailfile, point directly to the local installation like this:
+
+```json
+{
+  "nails" : [{
+      "plugin" : "./nail-static-react"
+    }]
+
+}
+```
+
+NOT This:
+
+```json
+{
+  "nails" : [{
+      "plugin" : "nail-static-react"
+    }]
+
+}
+```
 ##Options
 
  -  source:object - source data for react component. (Defaults to {}).
